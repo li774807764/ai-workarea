@@ -1,0 +1,19 @@
+{
+  "policy": {
+    "copies": 3,
+    "targets": [
+      "F:\\AI工作区（本机）",
+      "仓库（远端）",
+      "另一块盘（如 D:\\）"
+    ],
+    "keepSnapshots": 14
+  },
+  "itemes": [],
+  "sources": [
+    "F:\\AI工作区",
+    "E:\\11\\dsh-chain",
+    "E:\\11\\qq-bind",
+    "C:\\Users\\Administrator\\.dsh\\chain",
+    "C:\\Users\\Administrator\\.dsh\\profiles\\desktop\\cordis.patch.yml"
+  ]
+}

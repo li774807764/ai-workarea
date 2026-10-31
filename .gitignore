@@ -1,0 +1,16 @@
+# 快照与日志不进仓库（体积增长快，且能从源重建）
+备份/snapshots/
+备份/backup.log
+
+# 嵌套的裸仓库（本机远端）
+仓库/ai-workarea.git/
+
+# git 程序本体与安装包：工具而不是内容，体积 200MB 级
+工具/git/
+工具/_dl/
+
+# 通用
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

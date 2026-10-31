@@ -1,0 +1,46 @@
+{
+  "updatedAt": "2026-10-31T00:06:04.346Z",
+  "fields": [
+    "id",
+    "name",
+    "status",
+    "owner",
+    "path",
+    "receipt",
+    "note"
+  ],
+  "projects": [
+    {
+      "id": "p-dsh-chain",
+      "name": "dsh-chain 神经元星图记忆插件",
+      "status": "进行中",
+      "owner": "dsh-chain",
+      "path": "E:\\11\\dsh-chain",
+      "note": "7.62.1；下一步 P2 闸门"
+    },
+    {
+      "id": "p-workdesk",
+      "name": "AI 工作控制台",
+      "status": "进行中",
+      "owner": "workdesk",
+      "path": "F:\\AI工作区",
+      "note": "六层骨架 + 左侧栏控制台"
+    },
+    {
+      "id": "p-qq",
+      "name": "QQ 通道（dsh-qqchat 修补）",
+      "status": "已交付",
+      "owner": "qq-bind",
+      "path": "C:\\Users\\Administrator\\.dsh\\plugins\\dsh-qqchat",
+      "note": "审批已放开；多轮已跑通"
+    },
+    {
+      "id": "p-video",
+      "name": "DSH 总纲视频复盘",
+      "status": "已交付",
+      "owner": "dsh-chain",
+      "path": "E:\\11\\dsh-chain\\docs",
+      "note": "六层 + D1-D10 + P0-P6"
+    }
+  ]
+}

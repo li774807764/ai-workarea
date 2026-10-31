@@ -1,0 +1,78 @@
+{
+  "updatedAt": "2026-10-31T00:24:16.819Z",
+  "columns": [
+    {
+      "id": "todo",
+      "title": "待办"
+    },
+    {
+      "id": "doing",
+      "title": "进行中"
+    },
+    {
+      "id": "done",
+      "title": "已完成"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c1",
+      "col": "doing",
+      "title": "P2 记忆闸门：夜巡先出候选，确认才写皮层",
+      "owner": "dsh-chain",
+      "from": "owner",
+      "needReceipt": true,
+      "ts": "2026-10-31T00:06:04.341Z",
+      "receipt": "2026-10-31T00:11:49.637Z"
+    },
+    {
+      "id": "c2",
+      "col": "doing",
+      "title": "P1 场景画像 + 三卡绑定",
+      "owner": "dsh-chain",
+      "from": "owner",
+      "needReceipt": true,
+      "ts": "2026-10-31T00:06:04.341Z",
+      "receipt": "2026-10-31T00:12:23.125Z"
+    },
+    {
+      "id": "c3",
+      "col": "done",
+      "title": "工作控制台（@local/workdesk 0.1.0）已上线",
+      "owner": "workdesk",
+      "from": "owner",
+      "needReceipt": false,
+      "ts": "2026-10-31T00:06:04.341Z",
+      "receipt": "2026-10-31T00:10:19.570Z"
+    },
+    {
+      "id": "c4",
+      "col": "done",
+      "title": "备份接每日自动任务（任务计划程序 → backup.mjs）",
+      "owner": "workdesk",
+      "from": "owner",
+      "needReceipt": true,
+      "ts": "2026-10-31T00:10:19.570Z",
+      "receipt": "2026-10-31T00:12:54.739Z"
+    },
+    {
+      "id": "c5",
+      "col": "done",
+      "title": "F:\\AI工作区 接 git 仓库（仓库/repos.json 填 remote）",
+      "owner": "owner",
+      "from": "owner",
+      "needReceipt": true,
+      "ts": "2026-10-31T00:10:19.570Z",
+      "receipt": "2026-10-31T00:12:58.028Z"
+    },
+    {
+      "id": "c6",
+      "col": "todo",
+      "title": "（可选）换成 GitHub 远端：git remote set-url origin <url> && git push -u origin main",
+      "owner": "owner",
+      "from": "owner",
+      "needReceipt": false,
+      "ts": "2026-10-31T00:24:16.819Z"
+    }
+  ]
+}

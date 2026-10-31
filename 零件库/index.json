@@ -1,0 +1,57 @@
+{
+  "updatedAt": "2026-10-31T00:10:19.569Z",
+  "parts": [
+    {
+      "id": "workdesk",
+      "kind": "plugin",
+      "name": "@local/workdesk",
+      "version": "0.1.0",
+      "path": "E:\\11\\workdesk",
+      "caps": [
+        "六层导航",
+        "看板可写",
+        "项目台账",
+        "体检",
+        "备份/仓库状态"
+      ]
+    },
+    {
+      "id": "dsh-chain",
+      "kind": "plugin",
+      "name": "@local/dsh-chain",
+      "version": "7.62.1",
+      "path": "E:\\11\\dsh-chain",
+      "caps": [
+        "五池记忆",
+        "夜巡巩固",
+        "定位卡",
+        "红线",
+        "3D 记忆海面板"
+      ]
+    },
+    {
+      "id": "qq-bind",
+      "kind": "plugin",
+      "name": "@local/qq-bind",
+      "version": "0.1.0",
+      "path": "E:\\11\\qq-bind",
+      "caps": [
+        "QQ 扫码绑定",
+        "账号状态",
+        "日志查看"
+      ]
+    },
+    {
+      "id": "memory-evolve",
+      "kind": "plugin",
+      "name": "dsh-memory-evolve",
+      "version": "installed",
+      "path": "C:\\Users\\Administrator\\.dsh\\profiles\\desktop\\node_modules\\dsh-memory-evolve",
+      "caps": [
+        "全局/用户/项目记忆",
+        "待办",
+        "技能库"
+      ]
+    }
+  ]
+}

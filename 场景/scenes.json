@@ -1,0 +1,45 @@
+{
+  "updatedAt": "2026-10-31T00:06:26.265Z",
+  "scenes": [
+    {
+      "id": "dsh-chain",
+      "path": "F:\\AI工作区\\场景\\dsh-chain",
+      "cards": [
+        "scene.md",
+        "定位卡.md",
+        "场景画像.md",
+        "私有记忆.md"
+      ]
+    },
+    {
+      "id": "qq-channel",
+      "path": "F:\\AI工作区\\场景\\qq-channel",
+      "cards": [
+        "scene.md",
+        "定位卡.md",
+        "场景画像.md",
+        "私有记忆.md"
+      ]
+    },
+    {
+      "id": "workdesk",
+      "path": "F:\\AI工作区\\场景\\workdesk",
+      "cards": [
+        "scene.md",
+        "定位卡.md",
+        "场景画像.md",
+        "私有记忆.md"
+      ]
+    },
+    {
+      "id": "video-study",
+      "path": "F:\\AI工作区\\场景\\video-study",
+      "cards": [
+        "scene.md",
+        "定位卡.md",
+        "场景画像.md",
+        "私有记忆.md"
+      ]
+    }
+  ]
+}
