@@ -9,6 +9,9 @@
 工具/git/
 工具/_dl/
 
+# 私钥与 ssh 记录不进仓库（公钥 仓库/公钥.txt 可以进）
+仓库/.ssh/
+
 # 通用
 node_modules/
 *.log
