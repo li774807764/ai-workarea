@@ -11,7 +11,9 @@
 ## 备份
 
 - 手动：`node "F:\AI工作区\工具\backup.mjs"`（或双击 `E:\11\ai-workarea-backup.bat`）
-- 自动：任务计划程序里的「AI工作区每日备份」，每天 00:00 跑一次，日志在 `E:\11\workarea-backup.log`
+- 自动（两条线，日志都在 `E:\11\workarea-backup.log`）：
+  - 「AI工作区每日备份」每天 00:00 跑一次
+  - 「AI工作区开机补跑备份」登录后 2 分钟检查一次，若 20 小时内没有新快照就补跑（脚本 `E:\11\catchup-backup.mjs`）
 - 产物：`备份/snapshots/<时间戳>/`（工作区、dsh-chain、qq-bind、workdesk、星图数据），保留最近 14 份；`工具/git`、`工具/_dl`、`.git`、内嵌裸仓库、快照自身都不进快照
 - 为什么这么配：快照是「能回退到昨天」，仓库是「能看清每一步改了什么」，两者不互相替代
 
@@ -21,7 +23,12 @@
 - git 本体放在 `工具/git`（MinGit，免安装；这台机器原先没装 git），全路径调用：`F:\AI工作区\工具\git\cmd\git.exe`
 - 日常动作：`工具/git/cmd/git.exe add -A` → `... commit -m "做了什么"` → `... push origin main`
 - `.gitignore` 排除了 `备份/snapshots/`、`备份/backup.log`、`仓库/ai-workarea.git/`（快照与裸仓库不进自身历史）
-- 想换 GitHub：`git remote set-url origin <你的仓库地址>`，再 `git push -u origin main`；`仓库/repos.json` 里记着当前远端
+- 接 GitHub（已经准备好，只差授权这一步）：
+  - 仓库地址统一记在 `仓库/远端地址.json`（`remoteUrl` 字段）
+  - 专用密钥在 `仓库/.ssh/id_ed25519`，公钥放在 `仓库/公钥.txt`，把那一行粘到 https://github.com/settings/keys 即可
+  - 在 GitHub 建一个**空**仓库（不要勾 README/gitignore/License），把 SSH 地址（`git@github.com:用户名/ai-workarea.git`）填进 `远端地址.json`
+  - 然后跑 `node "F:\AI工作区\工具\接远端.mjs"`：自动设 origin、配上 core.sshCommand、push -u；本机裸仓库继续留作离线镜像
+  - `仓库/repos.json` 里记着当前远端与镜像路径
 
 ## 目录
 

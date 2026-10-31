@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T00:26:37.325Z",
+  "updatedAt": "2026-10-31T00:38:15.859Z",
   "columns": [
     {
       "id": "todo",
@@ -68,7 +68,7 @@
     {
       "id": "c6",
       "col": "doing",
-      "title": "（可选）换成 GitHub 远端：git remote set-url origin <url> && git push -u origin main",
+      "title": "GitHub 接管：公钥加入 GitHub + 建空仓库 + 填 仓库/远端地址.json → 跑 工具/接远端.mjs",
       "owner": "owner",
       "from": "owner",
       "needReceipt": false,
