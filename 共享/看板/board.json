@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T00:38:15.859Z",
+  "updatedAt": "2026-10-31T01:25:47.268Z",
   "columns": [
     {
       "id": "todo",
@@ -47,32 +47,42 @@
     },
     {
       "id": "c4",
-      "col": "doing",
+      "col": "done",
       "title": "备份接每日自动任务（任务计划程序 → backup.mjs）",
       "owner": "workdesk",
       "from": "owner",
       "needReceipt": true,
       "ts": "2026-10-31T00:10:19.570Z",
-      "receipt": "2026-10-31T00:12:54.739Z"
+      "receipt": "2026-10-31T01:25:47.268Z"
     },
     {
       "id": "c5",
-      "col": "doing",
+      "col": "done",
       "title": "F:\\AI工作区 接 git 仓库（仓库/repos.json 填 remote）",
       "owner": "owner",
       "from": "owner",
       "needReceipt": true,
       "ts": "2026-10-31T00:10:19.570Z",
-      "receipt": "2026-10-31T00:12:58.028Z"
+      "receipt": "2026-10-31T01:25:47.268Z"
     },
     {
       "id": "c6",
-      "col": "doing",
+      "col": "done",
       "title": "GitHub 接管：公钥加入 GitHub + 建空仓库 + 填 仓库/远端地址.json → 跑 工具/接远端.mjs",
       "owner": "owner",
       "from": "owner",
       "needReceipt": false,
-      "ts": "2026-10-31T00:24:16.819Z"
+      "ts": "2026-10-31T00:24:16.819Z",
+      "receipt": "2026-10-31T01:25:47.268Z"
+    },
+    {
+      "id": "c7",
+      "col": "todo",
+      "title": "每日自动 push 到 GitHub（00:00 备份后接一次 push，失败留日志）",
+      "owner": "owner",
+      "from": "owner",
+      "needReceipt": false,
+      "ts": "2026-10-31T01:25:47.268Z"
     }
   ]
 }

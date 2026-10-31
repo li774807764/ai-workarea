@@ -8,6 +8,6 @@
   "via": "ssh",
   "sshKey": "F:\\AI工作区\\仓库\\.ssh\\id_ed25519",
   "publicKeyFile": "F:\\AI工作区\\仓库\\公钥.txt",
-  "status": "待填地址（需要先把 公钥.txt 加进 GitHub，并新建一个空仓库）",
-  "updatedAt": "2026-10-31T00:40:00.000Z"
+  "status": "已接通 GitHub（SSH 认证通过，b312c43 已推送）",
+  "updatedAt": "2026-10-31T01:25:47.268Z"
 }

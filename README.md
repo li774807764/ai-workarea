@@ -19,16 +19,13 @@
 
 ## 仓库
 
-- 本机已经 `git init`，默认分支 `main`，远端是一个**本机裸仓库** `仓库/ai-workarea.git`（离线也能 push，等于第二份拷贝）
+- 主远端就是 GitHub：`git@github.com:li774807764/ai-workarea.git`（ssh，主分支 `main`），分支已跟踪 `origin/main`
+- 本机裸库 `仓库/ai-workarea.git` 保留作**离线镜像**：断网也能 push，等于第二份拷贝
 - git 本体放在 `工具/git`（MinGit，免安装；这台机器原先没装 git），全路径调用：`F:\AI工作区\工具\git\cmd\git.exe`
+- 凭据：专用密钥 `仓库/.ssh/id_ed25519`（公钥那一行在 `仓库/公钥.txt`，已加到 GitHub 账号，标题「AI工作区」）；`core.sshCommand` 已指向 MinGit 的 ssh 并带上这把钥匙，所以直接 `git push` 就行
 - 日常动作：`工具/git/cmd/git.exe add -A` → `... commit -m "做了什么"` → `... push origin main`
-- `.gitignore` 排除了 `备份/snapshots/`、`备份/backup.log`、`仓库/ai-workarea.git/`（快照与裸仓库不进自身历史）
-- 接 GitHub（已经准备好，只差授权这一步）：
-  - 仓库地址统一记在 `仓库/远端地址.json`（`remoteUrl` 字段）
-  - 专用密钥在 `仓库/.ssh/id_ed25519`，公钥放在 `仓库/公钥.txt`，把那一行粘到 https://github.com/settings/keys 即可
-  - 在 GitHub 建一个**空**仓库（不要勾 README/gitignore/License），把 SSH 地址（`git@github.com:用户名/ai-workarea.git`）填进 `远端地址.json`
-  - 然后跑 `node "F:\AI工作区\工具\接远端.mjs"`：自动设 origin、配上 core.sshCommand、push -u；本机裸仓库继续留作离线镜像
-  - `仓库/repos.json` 里记着当前远端与镜像路径
+- 地址与台账：仓库地址记在 `仓库/远端地址.json`，当前远端与镜像记在 `仓库/repos.json`；换地址后跑一次 `node "F:\AI工作区\工具\接远端.mjs"` 即可自动重设 origin 并推送
+- `.gitignore` 排除了 `备份/snapshots/`、`备份/backup.log`、`仓库/ai-workarea.git/`、`工具/git/`、`工具/_dl/`、`仓库/.ssh/` —— 快照、工具本体与私钥都不进历史
 
 ## 目录
 
