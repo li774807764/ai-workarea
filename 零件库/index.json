@@ -5,7 +5,7 @@
       "id": "workdesk",
       "kind": "plugin",
       "name": "@local/workdesk",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "E:\\11\\workdesk",
       "caps": [
         "六层导航",
@@ -13,7 +13,8 @@
         "项目台账",
         "体检",
         "备份/仓库状态"
-      ]
+      ],
+      "note": "0.2.0 加内存看门：内存红线 85/90 + 一键清残留（desk action=clean）"
     },
     {
       "id": "dsh-chain",

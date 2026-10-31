@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T01:25:47.268Z",
+  "updatedAt": "2026-10-31T01:39:41.090Z",
   "columns": [
     {
       "id": "todo",
@@ -77,12 +77,22 @@
     },
     {
       "id": "c7",
-      "col": "todo",
+      "col": "doing",
       "title": "每日自动 push 到 GitHub（00:00 备份后接一次 push，失败留日志）",
       "owner": "owner",
       "from": "owner",
       "needReceipt": false,
       "ts": "2026-10-31T01:25:47.268Z"
+    },
+    {
+      "id": "c8",
+      "col": "done",
+      "title": "控制台接「内存红线」：>90% 标红 + 一键清残留（workdesk 0.2.0 已上线）",
+      "owner": "workdesk",
+      "from": "owner",
+      "needReceipt": false,
+      "ts": "2026-10-31T01:32:11.629Z",
+      "receipt": "2026-10-31T01:39:41.090Z"
     }
   ]
 }
