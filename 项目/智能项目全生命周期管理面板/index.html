@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>智能项目全生命周期管理面板</title>
+<meta name="description" content="UML 驱动的项目全生命周期管控中枢：阶段门禁、任务看板、风险矩阵、变更控制、UML 建模与智能预警。零依赖，本地离线可用。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2338bdf8'/%3E%3Cpath d='M8 22V10h6a4 4 0 0 1 0 8H8m0 0v4' stroke='%230a111f' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css?v=1.0.3">
+</head>
+<body>
+
+<!-- 整个界面由 js/app.js 动态构建：侧栏导航 + 顶栏 + 视图容器 -->
+<div id="app"></div>
+
+<noscript>
+  <div style="padding:40px;font-family:system-ui;color:#e6edf7;background:#0a111f;height:100%">
+    <h1 style="font-size:18px">需要启用 JavaScript</h1>
+    <p style="color:#a2b3c8">本面板是纯前端单页应用（零依赖、可离线），所有数据保存在本机浏览器里。请允许本页运行脚本后刷新。</p>
+  </div>
+</noscript>
+
+<script>
+/* 加载自检：任何一个模块没挂上，直接给出可读的提示，而不是白屏 */
+window.addEventListener('load', function () {
+  var need = ['PLM', 'PLM_UML', 'PLM_ENGINE', 'PLM_REPORT'];
+  var missing = need.filter(function (k) { return !window[k]; });
+  if (missing.length) {
+    document.getElementById('app').innerHTML =
+      '<div style="padding:40px;font:14px/1.8 system-ui;color:#f87171">' +
+      '<b>加载失败：</b>缺少模块 ' + missing.join('、') + '。<br>' +
+      '请确认 js/ 目录完整（js/core、js/engine、js/uml、js/views、js/data），或重新解压本面板。</div>';
+    return;
+  }
+  /* registry 在引擎之前加载时，规则会排队；这里补注入一次 */
+  try { if (window.PLM.registry && PLM.registry.flushRules) PLM.registry.flushRules(); } catch (e) { console.error(e); }
+});
+</script>
+
+<!-- ============ 核心层（顺序不可换：后面的模块依赖前面的全局） ============ -->
+<script src="js/core/bus.js?v=1.0.3"></script>
+<script src="js/core/util.js?v=1.0.3"></script>
+<script src="js/core/schema.js?v=1.0.3"></script>
+<script src="js/core/store.js?v=1.0.3"></script>
+<script src="js/core/ui.js?v=1.0.3"></script>
+<script src="js/core/registry.js?v=1.0.3"></script>
+
+<!-- ============ 智能层：规则引擎 → 报告生成 ============ -->
+<script src="js/engine/rules.js?v=1.0.3"></script>
+<script src="js/engine/report.js?v=1.0.3"></script>
+
+<!-- ============ 建模层：UML 渲染器（用例/类/状态机/时序） ============ -->
+<script src="js/uml/uml.js?v=1.0.3"></script>
+
+<!-- ============ 数据：12 个示例项目（仅首次运行时写入本地） ============ -->
+<script src="js/data/seed.js?v=1.0.3"></script>
+
+<!-- ============ 视图层 ============ -->
+<script src="js/views/table.js?v=1.0.3"></script>
+<script src="js/views/dashboard.js?v=1.0.3"></script>
+<script src="js/views/projects.js?v=1.0.3"></script>
+<script src="js/views/kanban.js?v=1.0.3"></script>
+<script src="js/views/uml.js?v=1.0.3"></script>
+<script src="js/views/risks.js?v=1.0.3"></script>
+<script src="js/views/reports.js?v=1.0.3"></script>
+<script src="js/views/settings.js?v=1.0.3"></script>
+
+<!-- ============ 外壳：路由、顶栏、快捷键（最后启动） ============ -->
+<script src="js/app.js?v=1.0.3"></script>
+
+</body>
+</html>
