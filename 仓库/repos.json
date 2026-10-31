@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-31T00:24:00.000Z",
-  "gitExe": "F:\\AI工作区\\工具\\git\\cmd\\git.exe",
-  "repos": [
-    {
-      "id": "ai-workarea",
-      "path": "F:\\AI工作区",
-      "remote": "F:\\AI工作区\\仓库\\ai-workarea.git",
-      "remoteKind": "本机裸仓库（离线即最小可用远端）",
-      "branch": "main",
-      "firstCommit": "f1dfc2f",
-      "note": "git 用工具/git 里的 MinGit（本机原先没装）。快照与日志走 .gitignore 排除。要接 GitHub 时换 remote：git remote set-url origin <url> && git push -u origin main"
-    }
-  ]
+    "updatedAt":  "2026-10-31T00:24:51.000Z",
+    "gitExe":  "F:\\AI工作区\\工具\\git\\cmd\\git.exe",
+    "repos":  [
+                  {
+                      "id":  "ai-workarea",
+                      "path":  "F:\\AI工作区",
+                      "remote":  "F:\\AI工作区\\仓库\\ai-workarea.git",
+                      "remoteKind":  "本机裸仓库（离线即最小可用远端）",
+                      "branch":  "main",
+                      "firstCommit":  "746bba2",
+                      "note":  "git 用 工具/git 里的 MinGit（本机原先没装，本体不入库）。.gitignore 排除 备份/snapshots、工具/git、工具/_dl、仓库/ai-workarea.git。要接 GitHub：git remote set-url origin \u003curl\u003e 后 push -u origin main"
+                  }
+              ]
 }
