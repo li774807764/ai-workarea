@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T00:24:16.819Z",
+  "updatedAt": "2026-10-31T00:26:37.325Z",
   "columns": [
     {
       "id": "todo",
@@ -47,7 +47,7 @@
     },
     {
       "id": "c4",
-      "col": "done",
+      "col": "doing",
       "title": "备份接每日自动任务（任务计划程序 → backup.mjs）",
       "owner": "workdesk",
       "from": "owner",
@@ -57,7 +57,7 @@
     },
     {
       "id": "c5",
-      "col": "done",
+      "col": "doing",
       "title": "F:\\AI工作区 接 git 仓库（仓库/repos.json 填 remote）",
       "owner": "owner",
       "from": "owner",
@@ -67,7 +67,7 @@
     },
     {
       "id": "c6",
-      "col": "todo",
+      "col": "doing",
       "title": "（可选）换成 GitHub 远端：git remote set-url origin <url> && git push -u origin main",
       "owner": "owner",
       "from": "owner",
