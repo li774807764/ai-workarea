@@ -1,9 +1,9 @@
 {
   "说明": "这里就记 GitHub 那个仓库的地址。填好之后跑一次：node \"F:\\AI工作区\\工具\\接远端.mjs\"",
   "provider": "github",
-  "owner": "",
-  "repo": "",
-  "remoteUrl": "",
+  "owner": "li774807764",
+  "repo": "ai-workarea",
+  "remoteUrl": "git@github.com:li774807764/ai-workarea.git",
   "branch": "main",
   "via": "ssh",
   "sshKey": "F:\\AI工作区\\仓库\\.ssh\\id_ed25519",
