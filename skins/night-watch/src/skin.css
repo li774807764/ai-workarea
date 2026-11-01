@@ -1,0 +1,81 @@
+/* dsh-skin-night-watch · 潮汐值班 — 低照度深海 / 平静叙事 / 徽章式仪表 */
+:root,
+:root[data-dsw-theme="dark"],
+[data-dsw-theme="dark"] {
+  --dsw-alias-bg-base: #050a11;
+  --dsw-alias-bg-layer-1: #08111b;
+  --dsw-alias-bg-layer-2: #0a1420;
+  --dsw-alias-bg-layer-3: #0d1a28;
+  --dsw-alias-bg-overlay: rgba(6, 13, 21, 0.92);
+  --dsw-alias-bg-module-platform: #071019;
+  --dsw-alias-bg-multi-select: #12293d;
+  --dsw-alias-border-l1: #152b40;
+  --dsw-alias-border-l2: #1e3f5c;
+  --dsw-alias-border-l3: #27536f;
+  --dsw-alias-border-l4: #35688a;
+  --dsw-alias-label-primary: #cfe3f2;
+  --dsw-alias-label-primary-foreground: #e8f4ff;
+  --dsw-alias-label-secondary: #9db4c8;
+  --dsw-alias-label-tertiary: #6b8299;
+  --dsw-alias-label-caption: #587089;
+  --dsw-alias-brand-primary: #6ee7e0;
+  --dsw-alias-link: #7fd9ff;
+  --dsw-alias-button-primary-fill: #1d5f6b;
+  --dsw-alias-button-primary-hover: #26727f;
+  --dsw-alias-interactive-bg-hover: #10222f;
+  --dsw-alias-interactive-bg-hover-accent: #14313f;
+  --dsw-alias-interactive-bg-active: #16394a;
+  --dsw-alias-markdown-code-block: #07131d;
+  --dsw-alias-markdown-code-block-banner: #0b1c28;
+  --dsw-alias-markdown-inline-code: #123244;
+  --dsw-alias-markdown-citation: #17465a;
+  --dsw-alias-markdown-tag: #123244;
+  --dsw-alias-scrollbar-bg-l2: #12293d;
+  --dsw-alias-scrollbar-hover-l2: #1d4358;
+  --dsw-alias-settings-card-fill: #08131d;
+  --dsw-alias-settings-card-stroke: #16344a;
+  --dsw-alias-state-business-primary: #6ee7e0;
+  --dsw-alias-state-business-tertiary: #2f6f7a;
+  --dsw-alias-state-warn-primary: #ffb37a;
+  --dsw-alias-turn-trigger-bg: #0a1a26;
+  --dsw-alias-turn-trigger-bg-hover: #0e2634;
+  --dsw-alias-menu-group-header-fill: #0a1a26;
+  --dsw-alias-bg-document-preview: #071019;
+  --dsw-elevation-panel: 0 18px 40px rgba(2, 8, 14, 0.55);
+  --dsw-elevation-prominent: 0 24px 60px rgba(2, 8, 14, 0.62);
+  --dsw-elevation-soft: 0 8px 22px rgba(2, 8, 14, 0.42);
+  --dsw-elevation-stroke: 1px solid #16344a;
+  --dsw-elevation-stroke-color: #16344a;
+  --dsw-hovercard-bg: #0a1622;
+  --dsw-menu-surface-fill: #08131d;
+  --dsw-menu-backdrop-filter: blur(14px) saturate(115%);
+  --dsw-specific-bubble: #0c1f2c;
+  --dsw-specific-input-major: #081521;
+  --dsw-specific-menu: #08131d;
+  --dsw-specific-selector: #0a1a26;
+  --dsw-specific-sidebar-fill: #060f18;
+  --dsw-specific-sidebar-nav-item-active: #0f2a38;
+  --dsw-shadow-lv1: 0 2px 8px rgba(2, 8, 14, 0.45);
+  --dsw-shadow-lv2: 0 8px 20px rgba(2, 8, 14, 0.5);
+  --dsw-shadow-lv3: 0 16px 38px rgba(2, 8, 14, 0.55);
+  --dsw-mask-blur: blur(6px);
+}
+
+html[data-dsh-skin="night-watch"] body,
+html[data-dsh-skin="night-watch"] #root {
+  background-color: #050a11;
+  background-image:
+    radial-gradient(1200px 620px at 18% -10%, rgba(110, 231, 224, 0.06), transparent 62%),
+    radial-gradient(900px 520px at 88% 8%, rgba(127, 182, 255, 0.05), transparent 58%),
+    linear-gradient(180deg, #050a11 0%, #04080e 100%);
+  background-attachment: fixed;
+}
+
+html[data-dsh-skin="night-watch"] ::selection {
+  background: rgba(110, 231, 224, 0.24);
+  color: #e8f4ff;
+}
+
+html[data-dsh-skin="night-watch"] * {
+  scrollbar-color: #1d4358 #091520;
+}

@@ -1,0 +1,56 @@
+{
+  "name": "dsh-skin-night-watch",
+  "version": "1.0.0",
+  "description": "Night Watch (潮汐值班) — a low-light deep-sea skin for DeepSeek Harness: calm narration, badge-style gauges, ambient radar-blue tokens.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/li774807764/ai-workarea.git"
+  },
+  "homepage": "https://github.com/li774807764/ai-workarea/tree/main/skins/night-watch#readme",
+  "bugs": {
+    "url": "https://github.com/li774807764/ai-workarea/issues"
+  },
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "skin",
+    "theme",
+    "dark",
+    "deep-sea",
+    "cordis",
+    "plugin"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

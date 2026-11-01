@@ -1,0 +1,7 @@
+# dsh-skin-night-watch · 潮汐值班 — bundle patch.
+#
+# One Host row; the browser half rides `dsh.client` in package.json and is served
+# by client-modules at /plugins/dsh-skin-night-watch/client.js.
+- insert:
+    - id: night-watch
+      name: 'dsh-skin-night-watch'

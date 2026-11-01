@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "skin": "dsh-skin-night-watch",
+  "screenshots": [
+    {
+      "file": "screenshots/01-main.png",
+      "title": "主界面：潮汐雷达与晚班日志",
+      "width": 1920,
+      "height": 1080,
+      "poster": true
+    },
+    {
+      "file": "screenshots/02-radar.png",
+      "title": "雷达主视图特写",
+      "width": 954,
+      "height": 840
+    },
+    {
+      "file": "screenshots/03-log.png",
+      "title": "晚班日志与心跳曲线",
+      "width": 450,
+      "height": 840
+    },
+    {
+      "file": "screenshots/04-closeup.png",
+      "title": "仪表细节（2x）",
+      "width": 1920,
+      "height": 1240
+    },
+    {
+      "file": "screenshots/05-poster.png",
+      "title": "海报：1280×720",
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}
